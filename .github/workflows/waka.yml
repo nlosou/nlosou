@@ -18,12 +18,12 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
           # --- 本地化与格式 ---
-          LOCALE: "zh"                     # 语言设置为中文
+          LOCALE: "en"                     # 语言设置为中文
           SYMBOL_VERSION: "2"              # 进度条样式（1, 2, 或 3）
 
           # --- 开发者指标 (WakaTime) ---
           SHOW_OS: "True"                  # 显示操作系统
-          SHOW_PROJECTS: "True"            # 显示项目
+          SHOW_PROJECTS: "False"            # 显示项目
           SHOW_EDITORS: "True"             # 显示编辑器/IDE
           SHOW_LANGUAGE: "True"            # 显示编程语言
           SHOW_TOTAL_CODE_TIME: "True"     # 显示总编码时间
@@ -31,7 +31,7 @@ jobs:
           # --- GitHub 活动与统计 ---
           SHOW_COMMIT: "True"              # 显示提交活动图
           SHOW_DAYS_OF_WEEK: "True"        # 显示一周内最活跃的日子
-          SHOW_LANGUAGE_PER_REPO: "True"   # 显示每个仓库的语言分布
+          SHOW_LANGUAGE_PER_REPO: "False"   # 显示每个仓库的语言分布
           SHOW_LOC_CHART: "False"          # 代码行数图表 (可按需开启)
           SHOW_PROFILE_VIEWS: "True"       # 显示个人主页访问量
 
